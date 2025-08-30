@@ -310,6 +310,7 @@ export function isRunningInElectron(): boolean {
   if (typeof window === 'undefined') {
     return false;
   }
+  return false
 
   // 检查多个Electron特征
   const hasElectronAPI = typeof (window as any).electronAPI !== 'undefined';
